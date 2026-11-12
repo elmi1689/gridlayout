@@ -5,15 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gridlayout</title>
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css" />
-    
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #2c2c2c;
+      color: #f8f9fa;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .project-img {
+      height: 200px;
+      object-fit: cover;
+      background-color: #2a2a2a;
+    }
+  </style>
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light"></body>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">MY GALLERY</a>
+            <a class="navbar-brand fw-bold" href="#">MY PORTFOLIO</a>
 
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent" aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,18 +38,23 @@
             </button> 
 
 
-            <div class="navbar-collapse" id="navbarcontent">
-                <ul class="navbar-nav me auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PLAYERS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MOMENTS</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarcontent">
+              ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link active" href="#home">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#projects">PROJECTS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#about">ABOUT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#contact">CONTACT</a>
+  </li>
+</ul>
+
+               
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="SEARCH PLAYER..." aria-label="SEARCH">
                     <button class="btn btn-outline-light" type="SUBMIT">SEARCH</button> 
@@ -50,7 +72,7 @@
       <!-- Card 1: Cristiano Ronaldo -->
       <div class="col">
         <div class="card h-100 shadow-sm">
-          <img src="images/Cristiano Ronaldo Portugal 🇵🇹.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Cristiano Ronaldo">
+          <img src="images/Cristiano Ronaldo Portugal 🇵🇹.jpg" class="card-img-top" style="height: 250px; object-fit: cover; object-position: top;" alt="Cristiano Ronaldo">
           <div class="card-body">
             <h5 class="card-title">Cristiano Ronaldo</h5>
             <p class="card-text">SIIIIUUUUU!
@@ -65,7 +87,7 @@ Did you ever clear the ball straight onto the head of an opposing striker? No! Y
       <!-- Card 2: Sadio Mane -->
       <div class="col">
         <div class="card h-100 shadow-sm">
-          <img src="images/goat maguire.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="harry ballon d'or">
+          <img src="images/goat maguire.jpg" class="card-img-top" style="height: 250px; object-fit: cover; object-position: top;" alt="harry ballon d'or">
           <div class="card-body">
             <h5 class="card-title">Harry ballon d'or</h5>
             <p class="card-text">First, I have to thank Lionel Messi and Cristiano Ronaldo. For over a decade, they stole this trophy from me, and it’s great to finally see justice served. I’d also like to thank my former goalkeeper, David de Gea. David, without your reflexes, my no-look back passes and top-corner own goals wouldn't have looked nearly as dramatic.
@@ -77,7 +99,7 @@ Did you ever clear the ball straight onto the head of an opposing striker? No! Y
       <!-- Card 3: Player 3 -->
       <div class="col">
         <div class="card h-100 shadow-sm">
-          <img src="images/TyC Sports on Instagram_.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="mira wowo">
+          <img src="images/TyC Sports on Instagram_.jpg" class="card-img-top" style="height: 250px; object-fit: cover; object-position: top;" alt="mira wowo">
           <div class="card-body">
             <h5 class="card-title">Mira wowo</h5>
             <p class="card-text"> everyone. Please forgive me. I promised Antonela I wouldn't cry tonight, just like I cried when I left Barcelona... except this hurts way worse.
@@ -91,6 +113,6 @@ I sit in the second row watching Harry Maguire lift the golden ball..</p>
   </main>
 
    
-        <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
