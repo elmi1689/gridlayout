@@ -1,9 +1,11 @@
-import { defineConfig } from 'vite';
+import { resolve } from 'path'
 
-export default defineConfig({
-    root: '.',
-    server: {
-        port:8080,
-        open: true,
-    },
-});
+export default {
+  root: resolve(__dirname, 'src'),
+  build: {
+    outDir: '../dist'
+  },
+  server: {
+    port: 8080
+  }
+}
